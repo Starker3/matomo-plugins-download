@@ -16,6 +16,8 @@ if [ -z "$1" ]
     echo -e "No version supplied, getting plugins for the latest stable $MATOMO_CORE_VERSION..."
   else
     MATOMO_CORE_VERSION=$1
+    echo -e "Downloading plugins for Matomo $MATOMO_CORE_VERSION..."
+
 fi
 
 function die() {
